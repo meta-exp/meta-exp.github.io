@@ -53,9 +53,9 @@ Following, according to the Flux-Pattern, we describe the API-Communication, the
 
 #### API-Communication
 
-- `/src/utils/MetaPathAPI.js` holds all relevant actions regarding API-Communication
+- /src/utils/MetaPathAPI.js holds all relevant actions regarding API-Communication
 - Actions provided according to each component's functionality
-- `process.env.REACT_APP_API_HOST` React env-variable holds API-Endpoint
+- process.env.REACT_APP_API_HOST React env-variable holds API-Endpoint
 
 #### Stores
 
@@ -69,17 +69,25 @@ Following, according to the Flux-Pattern, we describe the API-Communication, the
 
 Main Parts: Setup page, Explore page, Result page
 
-**Setup Page:**
+##### Setup Page
 
--
+- SearchNodesSection: Component for executing a cypher query in CypherEditor-Component with syntax highlighting and auto-completion
+- ResultSetSection: Component for visualizing query response and selecting node candidates for both node sets
+- NodeSetsSection: Component for visualizing both selected candidate node sets and saving them
 
-**Explore Page:**
+##### Explore Page
 
--
+- MetaPathDisplay: General Component for displaying meta-path batches and rating scala, handling their rating change , batch size and rating interface change, displaying refrence meta-paths over all batches
+- MetaPath: Textual visualization of meta-path
+- MetaPathRater: Input range slider for rating a certain meta-path
+- IndividualRatingInterface: Table with meta-path and absolute rating slider for each meta-path
+- CombinedRatingMetaPathTable: Table with Meta-Path ID Button, which can be clicked to add Meta-Path to batch-global relative rating slider
 
-**Result Page:**
+##### Result Page
 
--
+- SimilarityScore: Component for displaying initially chosen node sets and a score for their similarity or 'connectedness'
+- ContributingMetaPaths: Component for visualizing a pie chart, that holds information abut how much each of the top-k meta-paths contribute to the similarity score
+- MetaPathDetails: Component for displaying details of a certain meta-path, i.e. structural and domain value and exemplary meta-path instances
 
 ### [Python Flask API and Algorithmic Backend](https://github.com/MetaExp/backend)
 
