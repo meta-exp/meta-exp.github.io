@@ -2,13 +2,20 @@
 
 ## Motivation
 
+We present MetaExp, a system that assists the user during the
+exploration of large knowledge graphs, given two sets of initial
+nodes. At its core, MetaExp presents a small set of meta-paths to the
+user, which are sequences of relationships among node types. Such
+meta-paths do not overwhelm the user with complex structures, yet
+they preserve semantically-rich relationships in a graph. MetaExp
+engages the user in an interactive procedure, which involves simple
+meta-paths evaluations to infer a user-specific similarity measure.
+
+More information can be found in the [paper](resources/paper.pdf), [slides](resources/presentation.pdf) and the [poster](resources/poster.pdf).
+
 ## System Architecture
 
-## Resources 
 
-- [paper](resources/paper.pdf)
-- [slides](resources/presentation.pdf)
-- [poster](resources/poster.pdf)
 
 ## Contributors
 Freya Behrens, Sebastian Bischoff, Pius Ladenburger, Julius Rückin, Laurenz Seidel, Fabian Stolp, Michael Vaichenker and Adrian Ziegler.
