@@ -107,7 +107,7 @@ Since this is a prototype, it is likely that the system will crash if they are c
 
 <img src="img/python_api_overview.png" alt="API_calls" width="600px"/>
 
-![API_procedures](img/python_api_overview.png =250x)
+#### API endpoints
 
 - **`get-available-datasets`**
   - Returns a list of all available neo4j-datasets in the backend.
