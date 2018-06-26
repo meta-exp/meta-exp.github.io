@@ -53,15 +53,15 @@ small description
 ### [ReactJS UI](https://github.com/MetaExp/frontend)
 
 Cross-Browser Usablity: Use Mozilla Firefox. Input range slider-thumb styling only works with Firefox
-Architectural Approach:[Flux-Pattern] (https://facebook.github.io/flux/docs/in-depth-overview.html#content)
+Architectural Approach: [Flux-Pattern](https://facebook.github.io/flux/docs/in-depth-overview.html#content)
 
 Following, according to the Flux-Pattern, we describe the API-Communication, the most important stores and components and to which stores, i.e. data changes, they listen to and which actions they trigger.
 
 #### API-Communication
 
-- /src/utils/MetaPathAPI.js holds all relevant actions regarding API-Communication
+- `/src/utils/MetaPathAPI.js` holds all relevant actions regarding API-Communication
 - Actions provided according to each component's functionality
-- process.env.REACT_APP_API_HOST React env-variable holds API-Endpoint
+- `process.env.REACT_APP_API_HOST` React env-variable holds API-Endpoint
 
 #### Stores
 
