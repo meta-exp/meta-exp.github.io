@@ -129,13 +129,7 @@ Since this is a prototype, it is likely that the system will crash if they are c
   - *IN* `None`
   - *OUT* `{'metapaths': [path1, path2, ... ], 'next_batch_available': bool}`
 
-'meta_paths': [{'id': 3,
-                   'metapath': ['Phenotype', 'HAS', 'Association', 'HAS', 'SNP', 'HAS', 'Phenotype'],
-                   'rating': 0.75},...]
-    'min_path':{}
-    'max_path':{}
-
-- **`rate-met-paths`**
+- **`rate-meta-paths`**
   - Send metapaths that have been rated.
   - *IN* `{'meta_paths': [{'id': 3,
                    'metapath': ['Phenotype', 'HAS', 'Association', 'HAS', 'SNP', 'HAS', 'Phenotype'],
@@ -144,15 +138,31 @@ Since this is a prototype, it is likely that the system will crash if they are c
     'max_path':{'id': ,..}}`
   - *OUT* `{'status': 200}`
  
+- **`stop-rating`**
+  - Finish the rating process.
+  - *IN* `None`
+  - *OUT* `{'status': 200}`
 
-- **`select_dataset`**
-  - HI
+- **`get-similarity-score`**
+  - Retrieve the similarity score for the previously defined node sets and preferences.
+  - *IN* `None`
+  - *OUT* `{'similarity_score': score}`
+
+- **`contributing-meta-paths`**
+  - Retrieve the most contributing MetaPaths for this similarity score.
+  - *IN* `None`
+  - *OUT* `{'contributing_meta_paths': [pie_chart_vis1,...]}`
+
+- **`similar-nodes`**
+  - Retrieve the most similar nodes to those in the set.
+  - *IN* `None`
+  - *OUT* `{'similar_nodes': [node1, node2,...]}`
+
+- **`logout`**
+  - Logout of the system.
   - *IN* `None`
   - *OUT* `{'status': 200}`
  
- 
-- routennamen, methode, input, output, purpose
-
 ### [Neo4j Graph Algorithms](https://github.com/MetaExp/neo4j-graph-algorithms)
 - hinzugefügte procedures, input output, purpose
 
