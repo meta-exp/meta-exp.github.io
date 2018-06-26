@@ -174,6 +174,10 @@ Since this is a prototype, it is likely that the system will crash if they are c
 ### [Neo4j Graph Algorithms](https://github.com/MetaExp/neo4j-graph-algorithms)
 - hinzugefügte procedures, input output, purpose
 
+### [Neo4j Graph Renderer](https://github.com/MetaExp/neo4j-graph-renderer)
+
+Forked and extended third party react component for visualizing neo4j graphs and interact with the nodes.
+
 ## Contributors
 Freya Behrens, Sebastian Bischoff, Pius Ladenburger, Julius Rückin, Laurenz Seidel, Fabian Stolp, Michael Vaichenker and Adrian Ziegler.
 
