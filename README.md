@@ -105,7 +105,9 @@ Finally the user can view the similarity.
 These phases are sequential. 
 Since this is a prototype, it is likely that the system will crash if they are called arbitrarily.
 
-![API_procedures](img/python_api_overview.png)
+<img src="img/python_api_overview.png" alt="API_calls" width="600px"/>
+
+![API_procedures](img/python_api_overview.png =250x)
 
 **select_dataset**
 
