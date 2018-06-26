@@ -129,6 +129,22 @@ Since this is a prototype, it is likely that the system will crash if they are c
   - *IN* `None`
   - *OUT* `{'metapaths': [path1, path2, ... ], 'next_batch_available': bool}`
 
+'meta_paths': [{'id': 3,
+                   'metapath': ['Phenotype', 'HAS', 'Association', 'HAS', 'SNP', 'HAS', 'Phenotype'],
+                   'rating': 0.75},...]
+    'min_path':{}
+    'max_path':{}
+
+- **`rate-met-paths`**
+  - Send metapaths that have been rated.
+  - *IN* `{'meta_paths': [{'id': 3,
+                   'metapath': ['Phenotype', 'HAS', 'Association', 'HAS', 'SNP', 'HAS', 'Phenotype'],
+                   'rating': 0.75},...],
+    'min_path':{'id': ,...},
+    'max_path':{'id': ,..}}`
+  - *OUT* `{'status': 200}`
+ 
+
 - **`select_dataset`**
   - HI
   - *IN* `None`
