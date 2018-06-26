@@ -17,6 +17,9 @@ More information can be found in the [paper](resources/paper.pdf), [slides](reso
 
 ## TODO  Deployment
 
+### A - Neo4j is already running
+
+### B - New Neo4j Instance
 
 ## System Architecture
 
