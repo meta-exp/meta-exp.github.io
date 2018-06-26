@@ -50,6 +50,43 @@ small description
  - komponenten
  - stores
 
+### [ReactJS UI](https://github.com/MetaExp/frontend)
+
+Cross-Browser Usablity: Use Mozilla Firefox. Input range slider-thumb styling only works with Firefox
+Architectural Approach:[Flux-Pattern] (https://facebook.github.io/flux/docs/in-depth-overview.html#content)
+
+Following, according to the Flux-Pattern, we describe the API-Communication, the most important stores and components and to which stores, i.e. data changes, they listen to and which actions they trigger.
+
+#### API-Communication
+
+- /src/utils/MetaPathAPI.js holds all relevant actions regarding API-Communication
+- Actions provided according to each component's functionality
+- process.env.REACT_APP_API_HOST React env-variable holds API-Endpoint
+
+#### Stores
+
+- AccountStore: Stores data regarding login information, e.g. username, chosen dataset, login state
+- AppStore: Navigation data, like current page and previous and next page (footer navigation)
+- SetupStore: Data of setup page, i.e. chosen node sets, cypher queries for neo4j graph visualization through forked third party [neo4j-graph-renderer](https://github.com/jbitton/neo4j-graph-renderer/pull/7)
+- ExploreStore: Meta-Paths and rating information, chosen rating interface, batch size
+- ResultStore: Holds explanatory data as a similarity score, top-k contributing meta-paths and additional meta-path information
+
+#### Components
+
+Main Parts: Setup page, Explore page, Result page
+
+**Setup Page:**
+
+-
+
+**Explore Page:**
+
+-
+
+**Result Page:**
+
+-
+
 ### [Python Flask API and Algorithmic Backend](https://github.com/MetaExp/backend)
 - routennamen, methode, input, output, purpose
 - generelles ablaufdiagram
