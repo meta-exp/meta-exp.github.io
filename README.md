@@ -15,9 +15,13 @@ meta-paths evaluations to infer a user-specific similarity measure.
 
 More information can be found in the [paper](resources/paper.pdf), [slides](resources/presentation.pdf) and the [poster](resources/poster.pdf).
 
+## Deployment
+
+# TODO 
+
 ## System Architecture
 
-
+![system overview](img/architecture.png)
 
 ## Contributors
 Freya Behrens, Sebastian Bischoff, Pius Ladenburger, Julius Rückin, Laurenz Seidel, Fabian Stolp, Michael Vaichenker and Adrian Ziegler.
