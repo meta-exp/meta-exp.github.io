@@ -82,6 +82,8 @@ Main Parts: Setup page, Explore page, Result page
 -
 
 ### [Python Flask API and Algorithmic Backend](https://github.com/MetaExp/backend)
+
+![API_procedures](img/python_api_overview.png)
 - routennamen, methode, input, output, purpose
 - generelles ablaufdiagram
 - python komponenten
