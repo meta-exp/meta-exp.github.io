@@ -109,11 +109,27 @@ Since this is a prototype, it is likely that the system will crash if they are c
 
 ![API_procedures](img/python_api_overview.png =250x)
 
-**`select_dataset`**
-- HI
-- **IN:** ` `
-- **OUT:** ` `
+- **`get-available-datasets`**
+ - Returns a list of all available neo4j-datasets in the backend.
+ - *IN* `None`
+ - *OUT* `{'status': 200}`
 
+- **`login`**
+ - Login into the system.
+ - *IN* `{'username': username, 'dataset': datasetname, 'purpose': purpose_of_similarity}`
+ - *OUT* `{'status': 200}`
+ 
+- **`node-types`**
+ - Select the input node types for both sets for the algorithm.
+ - *IN* `{'start_label': label_of_start_node, 'end_label': label_of_end_node, 'start_node_ids': list_of_node_ids, 'end_node_ids': list_of_node_ids}`
+ - *OUT* `{'status': 200}`
+
+- **`select_dataset`**
+ - HI
+ - *IN* `None`
+ - *OUT* `{'status': 200}`
+ 
+ 
 - routennamen, methode, input, output, purpose
 
 ### [Neo4j Graph Algorithms](https://github.com/MetaExp/neo4j-graph-algorithms)
