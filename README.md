@@ -15,13 +15,27 @@ meta-paths evaluations to infer a user-specific similarity measure.
 
 More information can be found in the [paper](resources/paper.pdf), [slides](resources/presentation.pdf) and the [poster](resources/poster.pdf).
 
-## Deployment
+## TODO  Deployment
 
-# TODO 
 
 ## System Architecture
 
+small description
+
 ![system overview](img/architecture.png)
+
+### ReactJS UI
+ toso small description
+ - komponenten
+ - stores
+
+### Python Flask API and Algorithmic Backend
+- routennamen, methode, input, output, purpose
+- generelles ablaufdiagram
+- python komponenten
+
+### Neo4j Graph Algorithms
+- hinzugefügte procedures, input output, purpose
 
 ## Contributors
 Freya Behrens, Sebastian Bischoff, Pius Ladenburger, Julius Rückin, Laurenz Seidel, Fabian Stolp, Michael Vaichenker and Adrian Ziegler.
