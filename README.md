@@ -110,24 +110,29 @@ Since this is a prototype, it is likely that the system will crash if they are c
 ![API_procedures](img/python_api_overview.png =250x)
 
 - **`get-available-datasets`**
- - Returns a list of all available neo4j-datasets in the backend.
- - *IN* `None`
- - *OUT* `{'status': 200}`
+  - Returns a list of all available neo4j-datasets in the backend.
+  - *IN* `None`
+  - *OUT* `{[dataset1, dataset2, ...]}`
 
 - **`login`**
- - Login into the system.
- - *IN* `{'username': username, 'dataset': datasetname, 'purpose': purpose_of_similarity}`
- - *OUT* `{'status': 200}`
+  - Login into the system.
+  - *IN* `{'username': username, 'dataset': datasetname, 'purpose': purpose_of_similarity}`
+  - *OUT* `{'status': 200}`
  
 - **`node-types`**
- - Select the input node types for both sets for the algorithm.
- - *IN* `{'start_label': label_of_start_node, 'end_label': label_of_end_node, 'start_node_ids': list_of_node_ids, 'end_node_ids': list_of_node_ids}`
- - *OUT* `{'status': 200}`
+  - Select the input node types for both sets for the algorithm.
+  - *IN* `{'start_label': label_of_start_node, 'end_label': label_of_end_node, 'start_node_ids': list_of_node_ids, 'end_node_ids': list_of_node_ids}`
+  - *OUT* `{'status': 200}`
+  
+- **`next-meta-paths/<int:batch_size>`**
+  - Retrieve the next batch_size MetaPaths that should be labelled by the user.
+  - *IN* `None`
+  - *OUT* `{'metapaths': [path1, path2, ... ], 'next_batch_available': bool}`
 
 - **`select_dataset`**
- - HI
- - *IN* `None`
- - *OUT* `{'status': 200}`
+  - HI
+  - *IN* `None`
+  - *OUT* `{'status': 200}`
  
  
 - routennamen, methode, input, output, purpose
