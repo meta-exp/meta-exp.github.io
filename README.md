@@ -83,10 +83,33 @@ Main Parts: Setup page, Explore page, Result page
 
 ### [Python Flask API and Algorithmic Backend](https://github.com/MetaExp/backend)
 
+#### Overview
+The python backend is structured into several components, each is responsible for either serving the api or part of the algorithmic backbone. The algorithmic parts are in their basic functionality. Work on the individual components is conducted outside of the MetaExp-Project, but might be referenced here in the future.
+
+- Serving Modules
+  - `server` : Serve API endpoints with a flask/gunicorn server
+  - `redis_own` : Provide access to a redis database where node embeddings are stored
+  - `neo4j_own` : Connector to the neo4j database
+- Algorithmic Modules
+  - `active_learning` : Provide active learning functionality for interactively learning a preference model of meta-paths
+  - `domain_scoring` : Calculate the similarity of two node sets given a preference over meta-paths
+  - `embeddings` : Compute vector-embeddings of MetaPaths
+  - `explaination` : Explain the similarity score
+
+#### API
+
+The API is not stateless, the image below describes the process of interating with the API.
+Users need to login to the system for a specific dataset.
+This is followed by the input-set selection and then the iterative rating of paths.
+Finally the user can view the similarity.
+These phases are sequential. 
+Since this is a prototype, it is likely that the system will crash if they are called arbitrarily.
+
 ![API_procedures](img/python_api_overview.png)
+
+**select_dataset**
+
 - routennamen, methode, input, output, purpose
-- generelles ablaufdiagram
-- python komponenten
 
 ### [Neo4j Graph Algorithms](https://github.com/MetaExp/neo4j-graph-algorithms)
 - hinzugefügte procedures, input output, purpose
