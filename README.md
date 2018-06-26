@@ -26,6 +26,7 @@ small description
 
 ### [ReactJS UI](https://github.com/MetaExp/frontend)
  toso small description
+ - use Mozilla Firefox
  - komponenten
  - stores
 
