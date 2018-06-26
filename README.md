@@ -1,5 +1,7 @@
 # MetaExp: Interactive Explanation and Exploration of Large Knowledge Graphs
 
+## TODO Picture
+
 ## Motivation
 
 We present MetaExp, a system that assists the user during the
