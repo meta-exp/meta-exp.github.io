@@ -17,9 +17,26 @@ More information can be found in the [paper](resources/paper.pdf), [slides](reso
 
 ## TODO  Deployment
 
-### A - Neo4j is already running
+### Requirements
+Our deployment is based on several docker containers, please install docker: [Mac](https://docs.docker.com/docker-for-mac/install/), 
+[Windows](https://docs.docker.com/docker-for-windows/install/) and 
+[Ubuntu](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/).
 
-### B - New Neo4j Instance
+### Graph Database
+A - Neo4j is already running
+B - New Neo4j Instance
+ mvn clean install
+ kopiert in plugins ordner
+### Python
+- start sockercontainer
+- redis server deployen
+- test_import route callen
+### UI
+To build your own local code use `deployment/build-ui.sh /path/to/code` (e.g. `deployment/build-ui.sh .`), 
+set the environment variable `REACT_APP_API_HOST` according to you API (e.g. export `REACT_APP_API_HOST=[API Endpoint]`) and 
+to run a single container `deployment/run-ui.sh [PORT]` (e.g. ./deployment/run-dev-ui.sh).
+
+
 
 ## System Architecture
 
