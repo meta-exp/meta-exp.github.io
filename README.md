@@ -45,12 +45,6 @@ small description
 ![system overview](img/architecture.png)
 
 ### [ReactJS UI](https://github.com/MetaExp/frontend)
- toso small description
- - use Mozilla Firefox
- - komponenten
- - stores
-
-### [ReactJS UI](https://github.com/MetaExp/frontend)
 
 Cross-Browser Usablity: Use Mozilla Firefox. Input range slider-thumb styling only works with Firefox
 Architectural Approach: [Flux-Pattern](https://facebook.github.io/flux/docs/in-depth-overview.html#content)
