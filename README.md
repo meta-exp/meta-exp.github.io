@@ -24,17 +24,17 @@ small description
 
 ![system overview](img/architecture.png)
 
-### ReactJS UI
+### [ReactJS UI](https://github.com/MetaExp/frontend)
  toso small description
  - komponenten
  - stores
 
-### Python Flask API and Algorithmic Backend
+### [Python Flask API and Algorithmic Backend](https://github.com/MetaExp/backend)
 - routennamen, methode, input, output, purpose
 - generelles ablaufdiagram
 - python komponenten
 
-### Neo4j Graph Algorithms
+### [Neo4j Graph Algorithms](https://github.com/MetaExp/neo4j-graph-algorithms)
 - hinzugefügte procedures, input output, purpose
 
 ## Contributors
