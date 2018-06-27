@@ -15,6 +15,10 @@ meta-paths evaluations to infer a user-specific similarity measure.
 
 More information can be found in the [paper](resources/paper.pdf), [slides](resources/presentation.pdf) and the [poster](resources/poster.pdf).
 
+### [Demo-Video](https://www.youtube.com/watch?v=7aBxVPUpUpM)
+
+[![MetaExp](https://img.youtube.com/vi/7aBxVPUpUpM/0.jpg)](https://www.youtube.com/watch?v=7aBxVPUpUpM)
+
 ## TODO  Deployment
 
 ### Requirements
