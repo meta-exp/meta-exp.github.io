@@ -21,7 +21,7 @@ More information can be found in the [paper](resources/paper.pdf), [slides](reso
 
 ## Deployment
 
-You can deploy the software with docker-compose. Detailed information and deployment scripts can be found in our [metaexp-deployment repository](https://github.com/MetaExp/metaexp-deployment)
+You can deploy the software with docker-compose. Detailed information and deployment scripts can be found in our [metaexp-deployment repository](https://github.com/meta-exp/metaexp-deployment)
 
 ### Requirements
 Our deployment is based on several docker containers, please install docker: [Mac](https://docs.docker.com/docker-for-mac/install/), 
@@ -50,7 +50,7 @@ small description
 
 ![system overview](img/architecture.png)
 
-### [ReactJS UI](https://github.com/MetaExp/frontend)
+### [ReactJS UI](https://github.com/meta-exp/frontend)
 
 Cross-Browser Usablity: Use Mozilla Firefox. Input range slider-thumb styling only works with Firefox
 Architectural Approach: [Flux-Pattern](https://facebook.github.io/flux/docs/in-depth-overview.html#content)
