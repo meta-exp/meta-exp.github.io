@@ -19,7 +19,9 @@ More information can be found in the [paper](resources/paper.pdf), [slides](reso
 
 [![MetaExp](https://img.youtube.com/vi/7aBxVPUpUpM/0.jpg)](https://www.youtube.com/watch?v=7aBxVPUpUpM)
 
-## TODO  Deployment
+## Deployment
+
+You can deploy the software with docker-compose. Detailed information and deployment scripts can be found in our [metaexp-deployment repository](https://github.com/MetaExp/metaexp-deployment)
 
 ### Requirements
 Our deployment is based on several docker containers, please install docker: [Mac](https://docs.docker.com/docker-for-mac/install/), 
