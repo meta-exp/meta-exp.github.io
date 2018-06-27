@@ -172,7 +172,12 @@ Since this is a prototype, it is likely that the system will crash if they are c
   - *OUT* `{'status': 200}`
  
 ### [Neo4j Graph Algorithms](https://github.com/MetaExp/neo4j-graph-algorithms)
-- hinzugefügte procedures, input output, purpose
+The neo4j-graph-algorithms library was extended by a procedure that computes all meta-paths on a given graph.
+
+- **`computeAllMetaPaths()`**
+  - This extracts all meta-paths from the graph that have the given length or are smaller. For each meta-path the count of paths fitting it is also computed.
+  - *IN* `{'meta-path-length': maximal length computed meta-pahts should have}`
+  - *OUT* `{'meta-paths with counts': a map of meta-paths and their path-counts}`
 
 ### [Neo4j Graph Renderer](https://github.com/MetaExp/neo4j-graph-renderer)
 
