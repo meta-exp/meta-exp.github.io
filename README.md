@@ -1,6 +1,8 @@
 # MetaExp: Interactive Explanation and Exploration of Large Knowledge Graphs
 
-## TODO Picture
+![](https://avatars2.githubusercontent.com/u/40595076?s=200&v=4)
+
+<!-- ## TODO Picture -->
 
 ## Motivation
 
@@ -13,9 +15,15 @@ they preserve semantically-rich relationships in a graph. MetaExp
 engages the user in an interactive procedure, which involves simple
 meta-paths evaluations to infer a user-specific similarity measure.
 
-More information can be found in the [paper](resources/paper.pdf), [slides](resources/presentation.pdf) and the [poster](resources/poster.pdf).
+### Resources
 
-### [Demo-Video](https://www.youtube.com/watch?v=7aBxVPUpUpM)
+More information can be found in 
+
+- the [paper](resources/paper.pdf), 
+- [slides](resources/presentation.pdf) and 
+- the [poster](resources/poster.pdf).
+
+### Demo-Video
 
 [![MetaExp](https://img.youtube.com/vi/7aBxVPUpUpM/0.jpg)](https://www.youtube.com/watch?v=7aBxVPUpUpM)
 
@@ -24,38 +32,59 @@ More information can be found in the [paper](resources/paper.pdf), [slides](reso
 You can deploy the software with docker-compose. Detailed information and deployment scripts can be found in our [metaexp-deployment repository](https://github.com/meta-exp/metaexp-deployment)
 
 ### Requirements
-Our deployment is based on several docker containers, please install docker: [Mac](https://docs.docker.com/docker-for-mac/install/), 
-[Windows](https://docs.docker.com/docker-for-windows/install/) and 
-[Ubuntu](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/).
+
+Our deployment is based on several docker containers, please install docker: 
+
+* [Mac](https://docs.docker.com/docker-for-mac/install/), 
+* [Windows](https://docs.docker.com/docker-for-windows/install/) and 
+* [Ubuntu](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/).
 
 ### Graph Database
-A - Neo4j is already running
-B - New Neo4j Instance
- mvn clean install
- kopiert in plugins ordner
+
+- Neo4j is already running
+
+- New Neo4j Instance
+
+#### Build Extension
+
+In [graph-algorithms](https://github.com/meta-exp/neo4j-graph-algorithms) repository:
+
+```
+mvn clean install
+cp algo/target/graph-algorithms-algo-*.jar $NEO_HOME/plugins
+
+# allow low level API access in neo4j.conf
+dbms.security.procedures.unrestricted=algo.*
+```
+ 
 ### Python
-- start sockercontainer
-- redis server deployen
-- test_import route callen
+
+1. start sockercontainer
+2. deploy redis server 
+3. call route test_import 
+
 ### UI
+
 To build your own local code use `deployment/build-ui.sh /path/to/code` (e.g. `deployment/build-ui.sh .`), 
 set the environment variable `REACT_APP_API_HOST` according to you API (e.g. export `REACT_APP_API_HOST=[API Endpoint]`) and 
 to run a single container `deployment/run-ui.sh [PORT]` (e.g. ./deployment/run-dev-ui.sh).
 
-
-
 ## System Architecture
 
-small description
+<!-- short description  -->
 
 ![system overview](img/architecture.png)
 
 ### [ReactJS UI](https://github.com/meta-exp/frontend)
 
-Cross-Browser Usablity: Use Mozilla Firefox. Input range slider-thumb styling only works with Firefox
+Cross-Browser Usablity: Please use Mozilla Firefox. 
+
+_The input range slider-thumb styling only works with Firefox_
+
 Architectural Approach: [Flux-Pattern](https://facebook.github.io/flux/docs/in-depth-overview.html#content)
 
-Following, according to the Flux-Pattern, we describe the API-Communication, the most important stores and components and to which stores, i.e. data changes, they listen to and which actions they trigger.
+Following, according to the Flux-Pattern, we describe the API-Communication, 
+the most important stores and components and to which stores, i.e. data changes, they listen to and which actions they trigger.
 
 #### API-Communication
 
@@ -98,12 +127,15 @@ Main Parts: Setup page, Explore page, Result page
 ### [Python Flask API and Algorithmic Backend](https://github.com/MetaExp/backend)
 
 #### Overview
-The python backend is structured into several components, each is responsible for either serving the api or part of the algorithmic backbone. The algorithmic parts are in their basic functionality. Work on the individual components is conducted outside of the MetaExp-Project, but might be referenced here in the future.
+
+The python backend is structured into several components, each is responsible for either serving the api or part of the algorithmic backbone. 
+The algorithmic parts are in their basic functionality. Work on the individual components is conducted outside of the MetaExp-Project, but might be referenced here in the future.
 
 - Serving Modules
   - `server` : Serve API endpoints with a flask/gunicorn server
   - `redis_own` : Provide access to a redis database where node embeddings are stored
   - `neo4j_own` : Connector to the neo4j database
+  
 - Algorithmic Modules
   - `active_learning` : Provide active learning functionality for interactively learning a preference model of meta-paths
   - `domain_scoring` : Calculate the similarity of two node sets given a preference over meta-paths
@@ -178,6 +210,7 @@ Since this is a prototype, it is likely that the system will crash if they are c
   - *OUT* `{'status': 200}`
  
 ### [Neo4j Graph Algorithms](https://github.com/MetaExp/neo4j-graph-algorithms)
+
 The neo4j-graph-algorithms library was extended by a procedure that computes all meta-paths on a given graph.
 
 - **`computeAllMetaPaths()`**
